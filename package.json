@@ -1,0 +1,42 @@
+{
+    "name": "img-strip",
+    "version": "1.0.0",
+    "description": "node 命令行工具 - 去除图片属性信息",
+    "main": "src/index.js",
+    "scripts": {
+        "build": "babel src --out-dir dist"
+    },
+    "bin": {
+        "img-strip": "./dist/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sugar710/image-strip.git"
+    },
+    "author": "sugar710<hxtgirq710@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/sugar710/image-strip/issues"
+    },
+    "homepage": "https://github.com/sugar710/image-strip#readme",
+    "dependencies": {
+        "chalk": "^4.0.0",
+        "commander": "^5.1.0",
+        "glob": "^7.1.6"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.6",
+        "@babel/plugin-transform-runtime": "^7.9.6",
+        "@babel/preset-env": "^7.9.6",
+        "@babel/register": "^7.9.0"
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env"
+        ],
+        "plugins": [
+            "@babel/plugin-transform-runtime"
+        ]
+    }
+}
